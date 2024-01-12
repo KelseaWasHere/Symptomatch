@@ -6,11 +6,17 @@ Conditions can then be saved for further reference.
 
 
 Final Scope of Project:
+
 Input symptoms for diagnosis using ChatGPT
+
 ChatGPT provides condition description, symptoms, common treatments, recommended actions, and the url of the source of information
+
 Conditions can be saved and accessed later for further reference
+
 Simple interface
+
 Database for integrating user data
+
 
 All Java and XML files are available for viewing. Screenshots of the user interface are also provided. 
 
