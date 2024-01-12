@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue"
+    tools:context=".ConditionInfoActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/conditionNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:text="Condition Name"
+                android:textAlignment="center"
+                android:textColor="@color/textWhite"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/conditionDisclaimerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Disclaimer Body"
+                android:textAlignment="center"
+                android:textColor="@color/textWhite"
+                android:padding="5dp"
+                android:background="@drawable/background_rectangle"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/conditionSymptomsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:text="Symptoms"
+                android:textAlignment="center"
+                android:textColor="@color/textWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/conditionSymptomsBodyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Symptoms Body"
+                android:textAlignment="gravity"
+                android:textColor="@color/textWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/conditionDescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/textWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/conditionDescriptionBodyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="Description Body"
+                android:textAlignment="gravity"
+                android:textColor="@color/textWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/conditionTreatmentsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:text="Common Treatments"
+                android:textAlignment="center"
+                android:textColor="@color/textWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/conditionTreatmentsBodyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Common Treatments Body"
+                android:textAlignment="gravity"
+                android:textColor="@color/textWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/conditionRecActionsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="30dp"
+                android:text="Recommended Actions"
+                android:textAlignment="center"
+                android:textColor="@color/textWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/conditionRecActionsBodyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Recommended Actions Body"
+                android:textAlignment="gravity"
+                android:textColor="@color/textWhite"
+                android:textSize="16sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/saveConditionButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/buttonBlue"
+                    android:onClick="SaveConditionButtonClicked"
+                    android:text="Save Condition"
+                    android:textColor="@color/textWhite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

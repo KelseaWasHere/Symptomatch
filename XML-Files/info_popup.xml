@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/infoBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:text="App Information"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="@color/textWhite"/>
+
+        <TextView
+            android:id="@+id/appInstructionsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Symptomatch is an app that finds medical conditions relevant to the user's symptoms.\n\nPlease note that all information ultimately comes from ChatGPT, a generative artificial intelligence by OpenAI.\n\nAny and all information provided by this app should not be used as medical diagnosis. Consult a medical professional if you feel you may need medical help.\n\nSymptomatch was created by:\n Curtis King, Elijah Leucht, Cody Taylor,\nOliver Matheus, and Kelsea Canaday\n\n\n\nTo start adding symptoms and find your condition, press the Add Symptoms button. \n\n To view your previously saved conditions, press the Saved Conditions button.\n\n"
+            android:textAlignment="center"
+            android:textColor="@color/textWhite"
+            android:textSize="16sp" />
+
+
+
+        <Button
+            android:id="@+id/exitSymptomsList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/buttonBlue"
+            android:onClick="ExitPopup"
+            android:text="Continue to App"
+            android:textColor="@color/textWhite" />
+
+    </LinearLayout>
+
+</RelativeLayout>
